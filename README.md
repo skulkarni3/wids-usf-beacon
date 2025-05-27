@@ -48,23 +48,10 @@ Here's how to organize your files to keep things clean and easy to navigate:
 ```
 notebook.ipynb       # Main Colab notebook for your analysis
 slides.md            # Your presentation in markdown format (used by remark.js)
-slides_marp.md       # Optional fancier slide format using Marp (see below)
 presentation.html    # Converts slides.md into a full-screen slideshow
 results/             # (Optional) Output plots or prediction files
 requirements.txt     # Python libraries used
 ```
----
-
-## 🎨 Optional: Fancy Marp Slide Deck
-
-Want a slicker design or PDF export?
-
-1. Open `slides_marp.md`
-2. Copy the content into [https://marp.app](https://marp.app)
-3. Click **“Play”** to present in the browser or **“Export as PDF”**
-
-This is optional, but helpful if you want slides that feel more like Keynote or PowerPoint.
-
 ---
 
 ## 💬 Questions?
