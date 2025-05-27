@@ -2,19 +2,53 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>WiDS Slides</title>
+    <title>WiDS Datathon Slides</title>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background: linear-gradient(to bottom right, #1f2f98, #38a1db);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .remark-slide-content {
+        background: rgba(255, 255, 255, 0.95);
+        color: #222;
+        padding: 2em;
+        border-radius: 12px;
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        color: #1f2f98;
+        font-size: 2.5em;
+      }
+      h2 {
+        color: #38a1db;
+        font-size: 2em;
+      }
+      h3 {
+        color: #3a3a3a;
+      }
+      .title-slide {
+        background: transparent;
+        color: white;
+        text-align: center;
+        padding-top: 150px;
+        font-size: 2em;
+      }
+      .remark-slide-number {
+        font-size: 12px;
+        color: #ccc;
+      }
+    </style>
   </head>
   <body>
-    <textarea id="source" style="display:none;">
-      <!-- Include the markdown content of slides.md directly -->
-    </textarea>
+    <textarea id="source" style="display: none;"></textarea>
     <script>
       fetch('slides.md')
         .then(response => response.text())
         .then(markdown => {
           document.getElementById('source').textContent = markdown;
-          remark.create();
+          remark.create({ ratio: '16:9', navigation: { scroll: false } });
         });
     </script>
   </body>
