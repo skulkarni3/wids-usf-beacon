@@ -2,7 +2,7 @@
   <img src="https://www.widsworldwide.org/wp-content/uploads/2023/05/WiDS_logo_nav.png" alt="WiDS Logo" width="250"/>
 </p>
 
-# WiDS Datathon 2026 – Student Submission Template
+<h1 align="center">WiDS Datathon 2026 – Student Submission Template</h1>
 
 Welcome to your project workspace for the WiDS Datathon 2026! This repository serves as your final submission for grading and sharing. All analysis should be done in Google Colab, and your final results will be presented in a standalone slide deck.
 
