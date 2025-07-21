@@ -1,59 +1,136 @@
 # 💡 WiDS Datathon 2026 – Student Submission Template
 
-This repository is a starter template for submitting your WiDS Datathon 2026 project. It uses **Google Colab** for notebooks and **Markdown-based slides** rendered with **remark.js** — no local setup needed!
+Welcome to your project workspace for the WiDS Datathon 2026! This repository serves as your final submission for grading and sharing. All analysis should be done in Google Colab, and your final results will be presented in a standalone slide deck.
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1. Clone or Fork this Repository
-Click the **Fork** button at the top-right of this page to make your own copy.
+Click the **Fork** button at the top-right of this page to create your own copy under your GitHub account.
 
 ### 2. Edit the Notebook in Colab  
-Click the badge below to open the notebook in Google Colab:  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Angela-Lombard/wids-datathon-template/blob/main/notebook.ipynb)
+Click below to open the notebook directly in Google Colab:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebook.ipynb)
 
-- Do your EDA and modeling directly in the notebook.
-- Use **Markdown cells** to explain your process.
-
-### 3. Edit Your Slides  
-Update the `slides.md` file to create your slide presentation.  
-Then, view your presentation here:  
-👉 [View Your Slides](https://angela-lombard.github.io/wids-datathon-template/presentation.html)
+- Do all data cleaning, EDA, modeling, and analysis in the notebook.  
+- Use Markdown cells to explain each step.
 
 ---
 
-## 📝 Submission Template
+## 🔍 Problem Statement
 
-### Problem Statement
-Briefly describe the problem you're solving.
-
-### Team Members
-- Name 1
-- Name 2
-- Name 3
-- Name 4
-
-### Approach
-Summarize how your team approached the problem, including any models or techniques used.
-
-### Results
-Include key metrics, graphs, or insights from your analysis.
+This year’s WiDS Datathon challenge offers **two powerful routes**. Each one addresses real-world problems caused by wildfires. Your team must choose **ONE** route and clearly indicate your choice in both your notebook and slide presentation.
 
 ---
 
-## 📁 Project Structure
-Here's how to organize your files to keep things clean and easy to navigate:
+### 🔹 Route 1: Accelerating Equitable Evacuations
 
-```
-notebook.ipynb       # Main Colab notebook for your analysis
-slides.md            # Your presentation in markdown format (used by remark.js)
-presentation.html    # Converts slides.md into a full-screen slideshow
-results/             # (Optional) Output plots or prediction files
-requirements.txt     # Python libraries used
-```
+**Core Question:**  
+*How can we reduce delays in evacuation alerts and improve response times for the communities that are most at risk?*
+
+This route focuses on analyzing how and when evacuation alerts are triggered — and how we can improve timeliness and fairness in communication, especially for vulnerable populations.
+
+**Suggested Starting Points:**
+- Compare `date_modified` and `effective` fields in WatchDuty to identify alert lags.
+- Integrate NOAA weather data (wind, humidity) to model fire spread and shrinking evacuation windows.
+- Map low-mobility zones (e.g. road access, car ownership) against health vulnerabilities (e.g. asthma, elderly population).
+- Build a risk surface using perimeter snapshots, alert timestamps, and report logs to assess delays.
+- Use `timestamp_reported` and classification reports to study "pending" alerts and delays.
+
+**Why this matters:**  
+Improved risk dashboards, real-time alerts, and support systems for people with disabilities, pets, or other special needs.
+
 ---
 
-## 💬 Questions?
+### 🔹 Route 2: Designing for Economic Resilience
 
-Visit the community hub: [WiDS Community](https://community.widsworldwide.org)
+**Core Question:**  
+*How can wildfire disruption analytics inform stronger economic safety nets for affected workers, families, and small businesses?*
+
+This route is about quantifying how wildfires affect employment, income, and tourism — and using that insight to design better protections for vulnerable communities.
+
+**Suggested Starting Points:**
+- Use `geo_event_type` and evacuation zones to estimate lost workdays and industry impact.
+- Overlay fire risk maps with labor statistics to simulate “fire leave” policy impacts.
+- Map wildfire frequency against Airbnb density and seasonal tourism data to assess local economic fragility.
+- Explore long-term effects like secondary illness, displacement, or financial strain.
+
+**Why this matters:**  
+Supports for gig workers, targeted aid for small businesses, and policy tools for economic recovery.
+
+---
+
+**Clearly state your chosen route at the top of your notebook and slide deck.** Your work should combine **data analysis**, **modeling**, and **real-world relevance** to propose actionable insights.
+
+---
+
+## 🧠 Project Title & Team Info
+
+**Project Title**: _Your Title Here_  
+**Team Name**: _Your Team Name_  
+**University**: _Your University_  
+**Course**: _Course Name (e.g., Data Science Capstone)_  
+**Term**: _Quarter/Semester & Year_  
+
+**Team Members**:  
+- Name 1 (GitHub: [@username](https://github.com/username))  
+- Name 2  
+- Name 3  
+- Name 4  
+
+---
+
+## 🗂 Dataset Overview
+
+Summarize the datasets you used and how you processed them.
+
+- `infrastructure.csv`: Metadata and coordinates of infrastructure
+- `fire_perimeters.geojson`: Timestamped fire perimeter polygons
+- `evacuation_zones.csv`: (Optional) evacuation declarations
+- `watch_duty_change_log.csv`: Alerts and timestamps
+- (Optional) NOAA weather data or census data
+
+Mention any merging, filtering, or assumptions.
+
+---
+
+## 🔁 Approach
+
+Explain your full workflow:
+- Preprocessing and cleaning
+- Spatial joins, feature engineering, timestamp analysis
+- Modeling (if applicable): regression, classification, clustering, etc.
+- Evaluation metrics used (AUC, F1, RMSE, etc.)
+- Tools used (e.g., pandas, geopandas, scikit-learn)
+
+---
+
+## 📈 Results
+
+Report your final results and key insights:
+- Metrics: Precision, Recall, ROC AUC, RMSE, etc.
+- Key findings or visualizations (include in slides)
+- Any limitations or ethical considerations
+
+---
+
+## 👥 Team Contributions
+
+| Name         | Contributions                                |
+|--------------|----------------------------------------------|
+| Name 1       | Feature engineering, model tuning            |
+| Name 2       | EDA, preprocessing, geospatial joins         |
+| Name 3       | Final modeling, evaluation, GitHub setup     |
+| Name 4       | Slides, results summary, presentation prep   |
+
+> All members are expected to contribute.
+
+---
+
+## 🔁 How to Reproduce
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/YOURTEAM/wids-2026-project.git
+   cd wids-2026-project
