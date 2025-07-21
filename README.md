@@ -1,10 +1,14 @@
-# 💡 WiDS Datathon 2026 – Student Submission Template
+<p align="center">
+  <img src="https://www.widsworldwide.org/wp-content/uploads/2023/05/WiDS_logo_nav.png" alt="WiDS Logo" width="250"/>
+</p>
+
+# WiDS Datathon 2026 – Student Submission Template
 
 Welcome to your project workspace for the WiDS Datathon 2026! This repository serves as your final submission for grading and sharing. All analysis should be done in Google Colab, and your final results will be presented in a standalone slide deck.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone or Fork this Repository
 Click the **Fork** button at the top-right of this page to create your own copy under your GitHub account.
@@ -18,7 +22,7 @@ Click below to open the notebook directly in Google Colab:
 
 ---
 
-## 🔍 Problem Statement
+## Problem Statement
 
 This year’s WiDS Datathon challenge offers **two powerful routes**. Each one addresses real-world problems caused by wildfires. Your team must choose **ONE** route and clearly indicate your choice in both your notebook and slide presentation.
 
@@ -65,7 +69,7 @@ Supports for gig workers, targeted aid for small businesses, and policy tools fo
 
 ---
 
-## 🧠 Project Title & Team Info
+## Project Title & Team Info
 
 **Project Title**: _Your Title Here_  
 **Team Name**: _Your Team Name_  
@@ -81,7 +85,7 @@ Supports for gig workers, targeted aid for small businesses, and policy tools fo
 
 ---
 
-## 🗂 Dataset Overview
+## Dataset Overview
 
 Summarize the datasets you used and how you processed them.
 
@@ -95,7 +99,7 @@ Mention any merging, filtering, or assumptions.
 
 ---
 
-## 🔁 Approach
+## Approach
 
 Explain your full workflow:
 - Preprocessing and cleaning
@@ -106,7 +110,7 @@ Explain your full workflow:
 
 ---
 
-## 📈 Results
+## Results
 
 Report your final results and key insights:
 - Metrics: Precision, Recall, ROC AUC, RMSE, etc.
@@ -115,7 +119,7 @@ Report your final results and key insights:
 
 ---
 
-## 👥 Team Contributions
+## Team Contributions
 
 | Name         | Contributions                                |
 |--------------|----------------------------------------------|
@@ -128,9 +132,16 @@ Report your final results and key insights:
 
 ---
 
-## 🔁 How to Reproduce
+## How to Reproduce
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/YOURTEAM/wids-2026-project.git
    cd wids-2026-project
+
+---
+
+## Questions?
+
+Visit the community hub: [WiDS Community](https://community.widsworldwide.org)
+
