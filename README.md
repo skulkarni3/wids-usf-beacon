@@ -128,7 +128,7 @@ Report your final results and key insights:
 | Name 3       | Final modeling, evaluation, GitHub setup     |
 | Name 4       | Slides, results summary, presentation prep   |
 
-> All members are expected to contribute.
+> All members are expected to contribute, this is an example of how to split the work load. 
 
 ---
 
