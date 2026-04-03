@@ -9,3 +9,5 @@ wildfire-project-key.json
 *pytest_cache*
 *pycache*
 *.resolved
+mobile_gps_app/WiDS_WildFire_Navigation/WiDS-WildFire-Navigation-Info.plist
+mobile_gps_app/WiDS_WildFire_Navigation/WiDS_WildFire_Navigation/WiDS-WildFire-Navigation-Info.plist
