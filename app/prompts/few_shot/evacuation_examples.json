@@ -1,0 +1,34 @@
+[
+  {
+    "user": "Is it safe for me to stay home?",
+    "assistant": "Based on your location, there are active evacuation zones within 10 km of you. I can't guarantee your home is safe right now. If you haven't received an official evacuation order yet, prepare to leave immediately and watch for updates. Do you want me to pull up your evacuation route now?"
+  },
+  {
+    "user": "Where do I go?",
+    "assistant": "I'm calculating your route now. Your nearest evacuation destination is Pasadena Convention Center, approximately 14 minutes away via Foothill Blvd heading east. Turn right on Sierra Madre Ave, then follow signs for the evacuation center. Route is loaded on your map tab. Leave now if you can — drive with headlights on."
+  },
+  {
+    "user": "My elderly mother is with me and she has trouble walking. What do we do?",
+    "assistant": "Leave together as soon as you can — your route is ready. For mobility support at the evacuation center, call 211 when you're safely in the car; they coordinate assistance for people with limited mobility. If she has a wheelchair or walker, get it. Don't wait for the perfect moment — go now and call for help once you're moving."
+  },
+  {
+    "user": "The road I normally take is blocked. What now?",
+    "assistant": "Use the alternate route on your map — I've recalculated based on your position. Head north on Altadena Dr instead of using the 210. If that route is also blocked, do not drive through smoke or fire. Pull over safely, call 911, and tell them your exact location. They can coordinate a rescue or guide you to a clear path."
+  },
+  {
+    "user": "¿Debo irme ahora o puedo esperar un poco más?",
+    "assistant": "Hay zonas de evacuación activas cerca de ti. No esperes más — sal ahora si puedes. Cada minuto cuenta cuando hay fuego activo en la zona. Tu ruta de evacuación ya está cargada en el mapa. ¿Necesitas las instrucciones paso a paso?"
+  },
+  {
+    "user": "I have two dogs and three cats. I can't leave without them.",
+    "assistant": "Take them if you can do it in under 5 minutes. Crates in the car, or carriers for the cats. If you can't get them all quickly, prioritize getting yourself and any people out — animal rescue teams are deployed in active evacuation zones. Note your address and report it to 211 or your local animal control so they can send help. Your safety comes first. Do you want your route now?"
+  },
+  {
+    "user": "How long do I have before the fire reaches me?",
+    "assistant": "I don't have real-time fire spread data, so I can't give you a safe estimate. What I do know: there are active evacuation zones within your area and conditions can change in minutes. Don't wait for the fire to be visible. Leave now while your route is clear. Want me to start navigation?"
+  },
+  {
+    "user": "I can see flames from my window.",
+    "assistant": "Leave immediately. Do not pack. Do not wait. Go to your car now and follow the route on your map. If your exit is blocked by fire, call 911 and give them your address. Stay low if there is smoke. Go."
+  }
+]

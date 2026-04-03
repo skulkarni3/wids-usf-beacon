@@ -1,0 +1,66 @@
+# Production dependencies for Cloud Run
+# Generated from requirements.txt — excludes dev/notebook tools
+
+# Web framework
+fastapi==0.133.1
+uvicorn[standard]==0.41.0
+python-multipart==0.0.22
+email-validator==2.3.0
+pydantic==2.12.5
+pydantic-extra-types==2.11.1
+threadpoolctl==3.6.0
+
+# AI
+anthropic==0.86.0
+openai==2.30.0
+
+# Google Cloud / Firebase
+google-cloud-bigquery==3.40.1
+google-cloud-bigquery-storage==2.36.2
+google-cloud-firestore==2.25.0
+firebase-admin==7.3.0
+pyarrow==23.0.1
+db-dtypes==1.5.0
+
+# Routing / geo
+openrouteservice==2.3.3
+geopandas==1.1.2
+shapely==2.1.2
+pyproj==3.7.2
+rasterio==1.4.4
+h3==4.4.2
+
+# Visualization (used in ors_route.py / check_evac.py / facilities_search.py)
+contextily==1.7.0
+folium==0.20.0
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# Data
+pandas==2.3.3
+numpy==2.4.3
+scipy==1.17.1
+xarray==2026.2.0
+scikit-learn==1.8.0
+SQLAlchemy==2.0.48
+
+# HRRR fire weather (wildfire_potential.py)
+herbie-data==2026.3.0
+cfgrib==0.9.15.1
+
+# Timezone
+timezonefinder==8.2.1
+pytz==2025.2
+
+# Auth
+passlib[bcrypt]==1.7.4
+PyJWT==2.12.1
+
+# HTTP / utils
+requests==2.32.5
+httpx==0.28.1
+python-dotenv==1.2.1
+
+# Postgres (Cloud SQL Python Connector)
+asyncpg==0.30.0
+cloud-sql-python-connector[asyncpg]==1.20.1

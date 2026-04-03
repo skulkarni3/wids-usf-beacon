@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Pets",
+    "items": [
+      { "id": "pets_food",  "title": "Pack their food for the next 3 days", "checked": false },
+      { "id": "pets_leash", "title": "Pack the leash and waste bags",        "checked": false }
+    ]
+  },
+  {
+    "title": "Medication",
+    "items": [
+      { "id": "med_daily", "title": "Pack your daily medications", "checked": false }
+    ]
+  },
+  {
+    "title": "Documents",
+    "items": [
+      { "id": "doc_id",            "title": "Grab your ID and passport",         "checked": false },
+      { "id": "doc_insurance",     "title": "Bring insurance documents",          "checked": false },
+      { "id": "doc_prescriptions", "title": "Take copies of prescriptions",       "checked": false }
+    ]
+  },
+  {
+    "title": "Essentials",
+    "items": [
+      { "id": "ess_clothes",  "title": "Pack a change of clothes for 3 days",   "checked": false },
+      { "id": "ess_charger",  "title": "Bring phone charger and power bank",     "checked": false },
+      { "id": "ess_water",    "title": "Pack water and snacks",                  "checked": false },
+      { "id": "ess_cash",     "title": "Bring cash",                             "checked": false }
+    ]
+  }
+]
