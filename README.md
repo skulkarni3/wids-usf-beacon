@@ -76,7 +76,7 @@ Supports for gig workers, targeted aid for small businesses, and policy tools fo
 **University**: _University of San Francisco_  
 **Course**: _Master's in Data Science and AI_  
 **Term**: _Spring 2026_  
-**Route**: Accelerating Equitable Evacuations
+**Route**: _Accelerating Equitable Evacuations_
 
 **Team Members**:  
 - Shruti Kulkarni (GitHub: [@skulkarni3](https://github.com/skulkarni3))  
