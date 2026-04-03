@@ -2,72 +2,13 @@
   <img src="https://www.widsworldwide.org/wp-content/uploads/2023/05/WiDS_logo_nav.png" alt="WiDS Logo" width="250"/>
 </p>
 
-<h1 align="center">WiDS Datathon 2026 – Student Submission Template</h1>
+<h1 align="center">WiDS Datathon 2026 - BEACON </h1>
 
-Welcome to your project workspace for the WiDS Datathon 2026! This repository serves as your final submission for grading and sharing. All analysis should be done in Google Colab, and your final results will be presented in a standalone slide deck.
+Climate change has significantly extended wildfire seasons in the United States by an average of 84 days compared to the 1970s, while wildfire smoke now contributes to an estimated 40,000 deaths annually. Despite these escalating risks, emergency alert infrastructure has not kept pace — the vast majority of alerts are broadcast in English only, leaving residents with limited English proficiency systematically underserved during life-threatening events.
 
----
+Existing tools such as Google Maps were evaluated for evacuation routing but repeatedly ignored fire polygon constraints, routing users through active fire perimeters — a critical failure when seconds matter.
 
-## Getting Started
-
-### 1. Clone or Fork this Repository
-Click the **Fork** button at the top-right of this page to create your own copy under your GitHub account.
-
-### 2. Edit the Notebook in Colab  
-Click below to open the notebook directly in Google Colab:  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebook.ipynb)
-
-- Do all data cleaning, EDA, modeling, and analysis in the notebook.  
-- Use Markdown cells to explain each step.
-
----
-
-## Problem Statement
-
-This year’s WiDS Datathon challenge offers **two powerful routes**. Each one addresses real-world problems caused by wildfires. Your team must choose **ONE** route and clearly indicate your choice in both your notebook and slide presentation.
-
----
-
-### 🔹 Route 1: Accelerating Equitable Evacuations
-
-**Core Question:**  
-*How can we reduce delays in evacuation alerts and improve response times for the communities that are most at risk?*
-
-This route focuses on analyzing how and when evacuation alerts are triggered — and how we can improve timeliness and fairness in communication, especially for vulnerable populations.
-
-**Suggested Starting Points:**
-- Compare `date_modified` and `effective` fields in WatchDuty to identify alert lags.
-- Integrate NOAA weather data (wind, humidity) to model fire spread and shrinking evacuation windows.
-- Map low-mobility zones (e.g. road access, car ownership) against health vulnerabilities (e.g. asthma, elderly population).
-- Build a risk surface using perimeter snapshots, alert timestamps, and report logs to assess delays.
-- Use `timestamp_reported` and classification reports to study "pending" alerts and delays.
-
-**Why this matters:**  
-Improved risk dashboards, real-time alerts, and support systems for people with disabilities, pets, or other special needs.
-
----
-
-### 🔹 Route 2: Designing for Economic Resilience
-
-**Core Question:**  
-*How can wildfire disruption analytics inform stronger economic safety nets for affected workers, families, and small businesses?*
-
-This route is about quantifying how wildfires affect employment, income, and tourism — and using that insight to design better protections for vulnerable communities.
-
-**Suggested Starting Points:**
-- Use `geo_event_type` and evacuation zones to estimate lost workdays and industry impact.
-- Overlay fire risk maps with labor statistics to simulate “fire leave” policy impacts.
-- Map wildfire frequency against Airbnb density and seasonal tourism data to assess local economic fragility.
-- Explore long-term effects like secondary illness, displacement, or financial strain.
-
-**Why this matters:**  
-Supports for gig workers, targeted aid for small businesses, and policy tools for economic recovery.
-
----
-
-**Clearly state your chosen route at the top of your notebook and slide deck.** Your work should combine **data analysis**, **modeling**, and **real-world relevance** to propose actionable insights.
-
----
+BEACON was built to change that. It is a fully agentic evacuation platform that puts a powerful, personalized assistant in every resident's pocket — in their own language. BEACON combines a real-time AI chatbot agent with a live GPS navigation system that reflects current fire danger and an hourly fire prediction model, ensuring users always have the most up-to-date situational awareness. Every alert, message, and UI component is rendered automatically in the user's native language — with no configuration required. In addition, users receive a personalized evacuation checklist tailored to their household — accounting for pets, medications, mobility needs, and family size. The navigation engine supports customized routing that can include essential stops along the way, such as pharmacies and medical facilities, while intelligently avoiding hazards. Routes are recalculated in real time around active fire perimeters using WatchDuty polygon data and OpenRouteService (ORS), guaranteeing that no path leads through danger.
 
 ## Project Title & Team Info
 
@@ -76,6 +17,7 @@ Supports for gig workers, targeted aid for small businesses, and policy tools fo
 **University**: _University of San Francisco_  
 **Course**: _Master's in Data Science and AI_  
 **Term**: _Spring 2026_  
+**Route**: _Accelerating Equitable Evacuations_
 
 **Team Members**:  
 - Shruti Kulkarni (GitHub: [@skulkarni3](https://github.com/skulkarni3))  
@@ -170,6 +112,8 @@ This project has two directories.
 In order to run the projects, please follow the following steps.
 
 1. app : FastAPI backend server 
+    * If you want to access the deployed backend, you can access via https://beacon-api-396652353766.us-west1.run.app 
+
     * To run it locally, ensure you have a docker installed.
     ```
     # Build locally
@@ -198,17 +142,13 @@ In order to run the projects, please follow the following steps.
 <b>Note:</b> See .env.template and create your .env file with valid values.
 
 2. mobile_gps_app: iOS frontend application
-TODO : Shruti Add Steps (try with someone new)
+    * If you want to download and beta test the iphone app. Please go to https://testflight.apple.com/join/HcQk4ehf or send an email to one of our team members to be added to the Apple Test Flight platform.
+    
     * Ensure you download Xcode if you want to reproduce the application 
     - On the project - Right Click >> Add Package Dependencies
-        - Add the following and ensure to have a dependency to the application.
-        1. https://github.com/firebase/firebase-ios-sdk
-        2. https://github.com/mapbox/mapbox-navigation-ios.git
+      - Add the following and ensure to have a dependency to the application.
+      1. https://github.com/firebase/firebase-ios-sdk
+      2. https://github.com/mapbox/mapbox-navigation-ios.git
 <b> Note: </b> On the setting, ensure to change the URL and other parameters accordingly. For Docker, we're using 8080 as a port.
 
----
-
-## Questions?
-
-Visit the community hub: [WiDS Community](https://community.widsworldwide.org)
 
